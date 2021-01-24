@@ -15,3 +15,9 @@ body {
     background-color: #800000;
     color: white;
 }
+
+#recentSongsPage .img-fluid{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
