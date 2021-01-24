@@ -7,48 +7,86 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
   <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
   <link rel="stylesheet" href="styles/main.css">
-  <title>Link Converter</title>
+  <title>Upload Link</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Link Converter</a>
-  </nav>
-  <div id="listPage" class="container page-container">
-    <div id="quoteListContainer">
-    </div>
-  </div>
-  <button id="fab" type="button" class="btn bmd-btn-fab" data-toggle="modal" data-target="#addQuoteDialog">
-    <i class="material-icons">add</i>
-  </button>
 
-
-  <!-- Modal -->
-  <div class="modal fade" id="addQuoteDialog" tabindex="-1" role="dialog" aria-labelledby="Add quote dialog"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">New Song</h5>
-        </div>
-        <div class="modal-body">
-          <div class="form-group bmd-form-group">
-            <label for="inputQuote" class="bmd-label-floating">Quote</label>
-            <input type="text" class="form-control" id="inputQuote">
-          </div>
-          <div class="form-group bmd-form-group">
-            <label for="inputMovie" class="bmd-label-floating">Movie</label>
-            <input type="text" class="form-control" id="inputMovie">
-            <span class="bmd-help"> What movie is this quote from?</span>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
-          <button id="submitAddQuote" type="button" class="btn btn-primary" data-dismiss="modal">CREATE</button>
-        </div>
+  <div class="bmd-layout-container bmd-drawer-f-l">
+    <header class="bmd-layout-header">
+      <div class="navbar navbar-light bg-faded">
+        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">
+          <span class="sr-only">Toggle drawer</span>
+          <i class="material-icons">menu</i>
+        </button>
+        <ul class="nav navbar-nav">
+          <li class="nav-item">Upload Link</li>
+        </ul>
       </div>
+    </header>
+    <div id="dw-s1" class="bmd-layout-drawer bg-faded">
+      <header>
+        <a class="navbar-brand">User name</a>
+      </header>
+      <ul class="list-group">
+        <a class="list-group-item">Playlists</a>
+        <a class="list-group-item">Account Info</a>
+        <a class="list-group-item">Upload Link</a>
+        <a class="list-group-item">Recently Searched</a>
+        <a class="list-group-item">Logout</a>
+        <a class="list-group-item">Close</a>
+      </ul>
+    </div>
+    <main class="bmd-layout-content">
+      <div class="container">
+      </div>
+    </main>
+  </div>
+
+
+
+  <div id="uploadLinkPage" class="container page-container">
+
+    
+    <div id="entryBoxesContainer">
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Paste spotify song link here</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Paste apple music song link here</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Paste spotify playlist link here</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Paste apple music playlist link here</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+
+
+
+
+
     </div>
   </div>
+
+
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
   <script src="scripts/bootstrap-material-design.js"></script>
