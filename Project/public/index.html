@@ -7,92 +7,45 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
   <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
   <link rel="stylesheet" href="styles/main.css">
-  <title>Upload Link</title>
+  <title>Moist</title>
 </head>
 
 <body>
-
-  <div class="bmd-layout-container bmd-drawer-f-l">
-    <header class="bmd-layout-header">
-      <div class="navbar navbar-light bg-faded">
-        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">
-          <span class="sr-only">Toggle drawer</span>
-          <i class="material-icons">menu</i>
-        </button>
-        <ul class="nav navbar-nav">
-          <li class="nav-item">Upload Link</li>
-        </ul>
-      </div>
-    </header>
-    <div id="dw-s1" class="bmd-layout-drawer bg-faded">
-      <header>
-        <a class="navbar-brand">User name</a>
-      </header>
-      <ul class="list-group">
-        <a class="list-group-item">Playlists</a>
-        <a class="list-group-item">Account Info</a>
-        <a class="list-group-item">Upload Link</a>
-        <a class="list-group-item">Recently Searched</a>
-        <a class="list-group-item">Logout</a>
-        <a class="list-group-item">Close</a>
-      </ul>
-    </div>
-    <main class="bmd-layout-content">
-      <div class="container">
-      </div>
-    </main>
-  </div>
-
-
-
-  <div id="uploadLinkPage" class="container page-container">
-
-    
+  <nav class="navbar navbar-dark fixed-top">
+    <div class="navbar-brand float-right">Moist</div>
+  </nav> 
+  <div id="mainPage" class="container page-container">
     <div id="entryBoxesContainer">
-
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">Paste spotify song link here</span>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Paste spotify song link here&nbsp;&nbsp;</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
         </div>
-        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-      </div>
-
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">Paste apple music song link here</span>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Paste apple music song link here&nbsp;&nbsp;</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
         </div>
-        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-      </div>
-
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">Paste spotify playlist link here</span>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Paste spotify playlist link here&nbsp;&nbsp;</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
         </div>
-        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-      </div>
-
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">Paste apple music playlist link here</span>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Paste apple music playlist link here&nbsp;&nbsp;</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
         </div>
-        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-      </div>
-
-
-
-
-
-
-    </div>
+        <button id="submitButton" class="btn">Submit</button>
   </div>
-
-
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
   <script src="scripts/bootstrap-material-design.js"></script>
-  <script>
-    $("body").bootstrapMaterialDesign();
-  </script>
+  <script>$("body").bootstrapMaterialDesign();</script>
   <script src="/__/firebase/7.18.0/firebase-app.js"></script>
   <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
   <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
