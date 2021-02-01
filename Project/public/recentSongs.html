@@ -11,20 +11,43 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Recent Songs</a>
-  </nav>
-  <div id="recentSongsPage" class="container page-container img-fluid">
-    <div id="recentSongsListContainer">
-        <div class="card justify-content-center">
-            <div class="card-body">
-              <img id="cardCover" src="https://wallpaperaccess.com/full/20159.jpg" alt="Album cover not found">
-              <h6 id="cardTitle" class="card-subtitle mb-2 text-muted">Fashion Killa</h6>
-              <h6 id="cardArtist" class="card-subtitle mb-2 text-muted">A$ap Rocky</h6>
-            </div>
-          </div>
+  <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+    <header class="bmd-layout-header">
+      <div class="navbar navbar-dark bg-faded fixed-top justify-content-start">
+        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s2">
+          <span class="sr-only">Toggle drawer</span>
+          <i class="material-icons">menu</i>
+        </button>
+        <a class="navbar-brand" href="#">&nbsp;&nbsp;Muscial Online Internet Sharing Technology (MOIST)</a>
+      </div>
+    </header>
+    <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+      <header>
+        <a class="navbar-brand">Muscial Online Internet Sharing Technology (MOIST)</a>
+      </header>
+      <ul class="list-group">
+        <a id="menuUploadLink" class="list-group-item"><i class="material-icons">people_alt</i>Upload Link</a>
+        <a id="menuViewPlaylists" class="list-group-item"><i class="material-icons">person</i>View Playlists</a>
+        <a id="menuViewRecents" class="list-group-item"><i class="material-icons">login</i>View Recents</a>
+        <a id="menuSignOut" class="list-group-item"><i class="material-icons">login</i>Sign Out</a>
+        <a id="menuClose" class="list-group-item"><i class="material-icons">login</i>Close</a>
+      </ul>
     </div>
+    <main class="bmd-layout-content">
+      <div id="recentSongsPage" class="container page-container img-fluid">
+        <div id="recentSongsListContainer">
+            <div class="card justify-content-center">
+                <div class="card-body">
+                  <img id="cardCover" src="https://wallpaperaccess.com/full/20159.jpg" alt="Album cover not found">
+                  <h6 id="cardTitle" class="card-subtitle mb-2 text-muted">Fashion Killa</h6>
+                  <h6 id="cardArtist" class="card-subtitle mb-2 text-muted">A$ap Rocky</h6>
+                </div>
+              </div>
+        </div>
+      </div>
+    </main>
   </div>
+
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
   <script src="scripts/bootstrap-material-design.js"></script>

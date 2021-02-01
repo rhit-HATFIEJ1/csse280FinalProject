@@ -11,14 +11,37 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">Song</a>
-    </nav>
-    <div id="loginPage" class="container page-container">
-      <img src="./images/rose_logo.png" id="songCover" alt="Song cover art">
-      <button id="appleMusicButton" type="button" class="btn">Apple Music Link</button>
-      <button id="spotifyButton" type="button" class="btn">Spotify Link</button>
-    </div>
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+        <header class="bmd-layout-header">
+          <div class="navbar navbar-dark bg-faded fixed-top justify-content-start">
+            <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s2">
+              <span class="sr-only">Toggle drawer</span>
+              <i class="material-icons">menu</i>
+            </button>
+            <a class="navbar-brand" href="#">&nbsp;&nbsp;Muscial Online Internet Sharing Technology (MOIST)</a>
+          </div>
+        </header>
+        <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+          <header>
+            <a class="navbar-brand">Muscial Online Internet Sharing Technology (MOIST)</a>
+          </header>
+          <ul class="list-group">
+            <a id="menuUploadLink" class="list-group-item"><i class="material-icons">people_alt</i>Upload Link</a>
+            <a id="menuViewPlaylists" class="list-group-item"><i class="material-icons">person</i>View Playlists</a>
+            <a id="menuViewRecents" class="list-group-item"><i class="material-icons">login</i>View Recents</a>
+            <a id="menuSignOut" class="list-group-item"><i class="material-icons">login</i>Sign Out</a>
+            <a id="menuClose" class="list-group-item"><i class="material-icons">login</i>Close</a>
+          </ul>
+        </div>
+        <main class="bmd-layout-content">
+            <div id="songPage" class="container page-container">
+                <img src="./images/rose_logo.png" id="songCover" alt="Song cover art">
+                <button id="appleMusicButton" type="button" class="btn">Apple Music Link</button>
+                <button id="spotifyButton" type="button" class="btn">Spotify Link</button>
+              </div>
+        </main>
+      </div>
+
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/popper.js"></script>
     <script src="scripts/bootstrap-material-design.js"></script>
