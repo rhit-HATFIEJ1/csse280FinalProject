@@ -16,8 +16,37 @@ body {
     color: white;
 }
 
+.bmd-layout-content {
+    height: 100vh;
+}
+
+.bmd-layout-drawer>ul {
+    background-color: #DDDDDD;
+}
+
+.bmd-layout-drawer>header {
+    background-color: #800000;
+    color: white;
+}
+
 #recentSongsPage .img-fluid{
     max-width: 100%;
     height: auto;
     width: auto;
+}
+
+#rosefireButton {
+    display: block;
+    margin: 60px auto;
+    color: white;
+    background: #800000;
+    font-size: 1.1em;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+#roseLogo{
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
